@@ -67,12 +67,12 @@ body {
 .name-description {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.8rem;
 }
 
 .name {
     font-family: var(--serif-font);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.1;
     color: var(--black-color);
@@ -88,12 +88,12 @@ body {
 .price {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .main-price {
     font-family: var(--serif-font);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--green-500-color);
 }
@@ -109,9 +109,9 @@ body {
     font-weight: 700;
     color: var(--white-color);
     background-color: var(--green-500-color);
-    padding-top: 22px;
-    padding-bottom: 22px;
-    border-radius: 6px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    border-radius: .4rem;
     border: none;
 }
 
@@ -129,22 +129,22 @@ body {
 .card-textual-content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.9rem;
 
-    padding: 30px;
+    padding: 1.9rem;
 }
 
 .card {
     display: flex;
     flex-direction: row;
-    max-width: 600px;
+    max-width: 38rem;
     
     background-color: var(--white-color);
-    border-radius: 10px;
+    border-radius: .6rem;
 }
 
 .product-pic img {
-    max-width: 300px;
+    max-width: 19rem;
     height: 100%;
     object-fit: cover;
     object-position: center;
@@ -165,7 +165,7 @@ body {
     display: none;
 }
 
-@media (width <= 799px) {
+@media (width < 50rem) {
     .card {
         flex-direction: column;
         max-width: initial;
@@ -176,13 +176,13 @@ body {
     }
 
     .card {
-        margin: 24px 14px;
+        margin: 1.5rem 1rem;
     }
 
     .product-pic img {
         max-width: 100%;
         width: 100%;
         border-bottom-left-radius: 0;
-        border-top-right-radius: 10px;
+        border-top-right-radius: .6rem;
     }
 }
