@@ -145,6 +145,7 @@ body {
 
 .product-pic img {
     max-width: 300px;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     border-top-left-radius: 10px;
@@ -162,4 +163,26 @@ body {
 
 .attribution {
     display: none;
+}
+
+@media (width <= 799px) {
+    .card {
+        flex-direction: column;
+        max-width: initial;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .card {
+        margin: 24px 14px;
+    }
+
+    .product-pic img {
+        max-width: 100%;
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
 }
